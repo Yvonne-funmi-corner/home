@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit Meme | Yvonne Funmi's Page</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="url"],
+    textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-top: 0.3rem;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      background: #ff69b4;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #e0559f;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <h1 class="logo">Yvonne Funmi 💖</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="memes.html">Memes</a></li>
+          <li><a href="submit-meme.html" class="active">Submit Meme</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Submit a Meme 😎</h2>
+      <p>Got something funny, savage or chaotic? Send it in — you might get featured!</p>
+    </div>
+  </section>
+
+  <section class="highlights">
+    <div class="container">
+      <form action="https://formspree.io/f/yourFormID" method="POST">
+        <label for="name">Your Name / Nickname</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="caption">Caption for Your Meme</label>
+        <textarea id="caption" name="caption" rows="3" required></textarea>
+
+        <label for="meme">Link to Your Meme Image (use Imgur, Google Drive, etc.)</label>
+        <input type="url" id="meme" name="meme" placeholder="https://example.com/meme.jpg" required>
+
+        <button type="submit">Send Meme</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Yvonne Funmi's Page. Built with 💅 and vibes.</p>
+    </div>
+  </footer>
+</body>
+</html>
