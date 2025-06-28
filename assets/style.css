@@ -111,7 +111,10 @@ footer {
   .cards {
     flex-direction: column;
   }
-
+  @media (max-width: 768px) {
+  .logo img {
+    height: 30px;
+  }
   .card {
     width: 100%;
   }
