@@ -29,6 +29,13 @@ header {
   font-size: 1.8rem;
   font-weight: bold;
 }
+.highlights img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto; /* optional spacing & centering */
+  border-radius: 10px; /* optional: soft round edges */
+}
 nav ul {
   list-style: none;
   display: flex;
