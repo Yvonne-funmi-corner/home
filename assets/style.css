@@ -26,8 +26,10 @@ header {
   align-items: center;
 }
 .logo img {
-  height: 50px; /* or 35px, depending on your design */
-  width: auto;
+  height: auto;
+  width: 20vw; /* Makes it 20% of the viewport width */
+  max-width: 150px;
+  min-width: 80px;
   vertical-align: middle;
 }
 nav ul {
@@ -111,10 +113,11 @@ footer {
   .cards {
     flex-direction: column;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
   .logo img {
-    height: 50px;
+    width: 30vw;
   }
+}
   .card {
     width: 100%;
   }
