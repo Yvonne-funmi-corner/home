@@ -25,13 +25,8 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
-.logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
 .logo img {
-  height: 40px; /* or 35px, depending on your design */
+  height: 27px; /* or 35px, depending on your design */
   width: auto;
   vertical-align: middle;
 }
