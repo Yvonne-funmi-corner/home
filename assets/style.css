@@ -27,7 +27,7 @@ header {
 }
 .logo img {
   height: auto;
-  width: 20vw; /* Makes it 20% of the viewport width */
+  width: 50vw; /* Makes it 20% of the viewport width */
   max-width: 150px;
   min-width: 80px;
   vertical-align: middle;
