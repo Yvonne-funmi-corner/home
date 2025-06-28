@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meme Zone | Yvonne Funmi's Page</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    .meme-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 2rem;
+    }
+
+    .meme-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .meme-card:hover {
+      transform: scale(1.03);
+    }
+
+    .meme-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .meme-caption {
+      padding: 0.8rem;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 500px) {
+      .meme-caption {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <h1 class="logo">Yvonne Funmi 💖</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="memes.html" class="active">Memes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>The Meme Zone 😂🔥</h2>
+      <p>When words fail, memes come through! Enjoy savage content curated by Yvonne 💅</p>
+    </div>
+  </section>
+
+  <section class="highlights">
+    <div class="container">
+      <div class="meme-grid">
+        <div class="meme-card">
+          <img src="assets/images/meme1.jpg" alt="Meme 1">
+          <div class="meme-caption">"When he says 'I’m not ready for a relationship' but wants to be calling you babe."</div>
+        </div>
+
+        <div class="meme-card">
+          <img src="assets/images/meme2.jpg" alt="Meme 2">
+          <div class="meme-caption">"After you reply with 'K' and he starts panicking 😂"</div>
+        </div>
+
+        <div class="meme-card">
+          <img src="assets/images/meme3.jpg" alt="Meme 3">
+          <div class="meme-caption">"Girls after 2 weeks of talking to a guy: 'He's different 😭'"</div>
+        </div>
+
+        <div class="meme-card">
+          <img src="assets/images/meme4.jpg" alt="Meme 4">
+          <div class="meme-caption">"Me reading old messages and cringing at how I was simping 💀"</div>
+        </div>
+
+        <!-- Add more memes by duplicating blocks -->
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Yvonne Funmi's Page. Built with 💅 and vibes.</p>
+    </div>
+  </footer>
+</body>
+</html>
